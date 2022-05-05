@@ -21,14 +21,12 @@ const Login = () => {
         navigate('/register');
     }
 
-    const handleRegister = (event) => {
-        event.preventDefault();
-    }
+    
 
     return (
         <div className='container w-50 bg-success mx-auto mt-3 mb-3 p-4'>
             <h3 className='text-warning text-center'>Please Login</h3>
-            <Form onSubmit={handleRegister}>
+            <Form onSubmit={handleSubmit}>
                 <Form.Group className="mb-3" controlId="formBasicEmail">
                     <Form.Label>Email address</Form.Label>
                     <Form.Control ref={emailRef} type="email" placeholder="Enter email" required/>
